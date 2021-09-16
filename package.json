@@ -1,0 +1,17 @@
+{
+  "name": "stripe-webhook-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/UiO-Gaming/stripe-webhook-api",
+  "author": "LBlend",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "stripe": "^8.174.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
