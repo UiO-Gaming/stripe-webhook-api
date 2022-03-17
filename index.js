@@ -1,10 +1,9 @@
 require("dotenv").config();
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+require("stripe")(process.env.STRIPE_SECRET_KEY);
 const { default: axios } = require("axios");
 const express = require("express");
 const app = express();
 
-const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 const webhookUrl = process.env.WEBHOOK_URL;
 const port = process.env.PORT;
 
