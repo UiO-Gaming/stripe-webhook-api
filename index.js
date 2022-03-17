@@ -23,8 +23,10 @@ app.post(
     switch (event.type) {
       case "checkout.session.completed":
         const paymentCompleteEvent = event.data.object;
-        console.log(paymentCompleteEvent)
-        sendToDiscord(`<@267415183931080715> <@280753175340908546> <@170506717140877312> Ny betaling fra \`${paymentCompleteEvent.customer_details.email}\``)
+        console.log(paymentCompleteEvent);
+        sendToDiscord(
+          `<@&897216878672478229>  Ny betaling fra \`${paymentCompleteEvent.customer_details.email}\``
+        );
         break;
 
       default:
