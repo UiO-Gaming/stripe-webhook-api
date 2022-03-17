@@ -6,6 +6,7 @@ const app = express();
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 const webhookUrl = process.env.WEBHOOK_URL;
+const port = process.env.PORT;
 
 const sendToDiscord = (message) => {
   const discordPayload = {
@@ -37,4 +38,4 @@ app.post(
   }
 );
 
-app.listen(4242, () => console.log("Running on port 4242"));
+app.listen(port, () => console.log(`Running on port ${port}`));
