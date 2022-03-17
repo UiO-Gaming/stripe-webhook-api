@@ -25,7 +25,7 @@ app.post(
         const paymentCompleteEvent = event.data.object;
         console.log(paymentCompleteEvent);
         sendToDiscord(
-          `<@&897216878672478229>  Ny betaling fra \`${paymentCompleteEvent.customer_details.email}\``
+          `<@&897216878672478229> Ny betaling fra \`${paymentCompleteEvent.customer_details.email}\``
         );
         break;
 
