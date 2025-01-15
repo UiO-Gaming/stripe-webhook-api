@@ -10,11 +10,11 @@ Et webhook API som videresender stripe betalingsmeldinger til Discord
 1. Installer avhengigheter
 
 ```
-yarn install
+npm install
 ```
 
 2. Kjør API
 
 ```
-yarn start
+npm start
 ```
